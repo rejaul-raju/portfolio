@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700,900&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+*{
+margin:0px;
+padding:0px;
+}
+body{
+	font-family:Cinzel;
+}
+
+h1, h2, h3, h4 {
+font-family: 'Luckiest Guy', cursive;
+letter-spacing:	0;
+
+}
+::selection{
+	background: #da00bf;
+	color: #fffdf6;
+}
+
+
+#dharok{
+	border-bottom: 4px solid #ffbc00;
+	overflow: hidden;
+	padding: 0px;
+
+}
+
+ul.mainmenu a {
+    display: inline-block;
+    float: right;
+    padding: 20px;
+    font-weight: bold;
+    text-decoration: none;
+	color:#000;
+	transition:color  0.5s;
+
+}
+ul.mainmenu :hover{
+	transition:0.5s;
+	color:orange;
+}
+.mainlogo #dharok{
+	display:inline-block;		
+}
+.mainlogo {
+    width: 300px;
+    float: left;
+    margin-left: 49px;
+	max-width:100%;
+}
+ul.mainmenu {
+    margin-bottom: 9px;
+
+}
+.TourHead h1{
+	margin-top:30px;
+	text-align:center;
+	font-size:40px;
+	width: 350px;
+	margin: auto;
+	background: #c06dff;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	border-radius: 40px 0px;
+}
+.TourHead h1:hover{
+	box-shadow: 8px 2px 8px #bfbfbf;
+	cursor:pointer;
+}
+.color1{
+	color:orange;
+}
+
+/*------Image slider-------*/	
+
+@keyframes Slider{
+0%{
+	left:0;	
+}
+20%{
+	left:0;	
+}	
+25%{
+	left:-100%;	
+}	
+45%{
+	left:-100%;	
+}	
+50%{
+	left:-200%;	
+}	
+70%{
+	left:-200%;	
+}	
+75%{
+	left:-300%;	
+}	
+95%{
+	left:-300%;	
+}	
+100%{
+	left:-400%;	
+}			
+}
+#slider{
+	overflow:hidden;
+}
+#slider figure img{
+	width:20%;
+	float:left;
+}
+#slider figure{
+	position:relative;
+	width:500%;
+	margin:0;
+	left:0;
+	text-align:left;
+	font-size:0;
+	animation:Slider 30s infinite;
+}
+.Mperson{
+	width: 438px;
+	height: 150;
+	background:#0043ff0d;
+	border-radius:5px;
+	margin: 29px;
+	border: 1px solid #ddd;
+	animation-name:membersframe;
+	animation-duration:1s;
+}
+.memberimage{
+    max-width: 100%;
+    width: 150px;
+    filter: grayscale(100%);
+}
+.memberimage:hover{
+    filter: grayscale(0%);
+}
+div#continer {
+    width: 1000px;
+    margin: auto;
+    box-shadow: -1px -1px 20px 0px #c1c1c1;
+}
+.Mperson h2{
+	font-family:Cinzel;
+	color:orange;
+	border-bottom:2px solid orange;
+	text-align:center;
+	line-height:30px;
+}
+
+.memberimage, .Mperson, .about{
+	display: inline-block;
+}
+.about {
+    width: 270px;
+    position: absolute;
+    margin: 5px 14px;
+    overflow: hidden;
+}
+.sosialicons{
+    font-size: 40px;
+    position: absolute;
+    margin: -53px 0 0 161px;
+    letter-spacing:	15px;
+    padding: 0 32px;
+}
+.mainhead{
+	background: #ffdfa4;
+	color:#444;
+	width:500px;
+	margin:auto;
+	padding:10px;
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:10px;
+	border-bottom:5px solid orange;
+	border-radius:5px;
+}
+@keyframes membersframe {
+	from{transform:scale(0);}
+	to{transform:scale(1);}
+	
+}
+i.fab.fa-facebook {
+    color: #333;
+}
+
+.fab.fa-instagram {
+    color: #333;
+}
+.fab.fa-twitter-square {
+    color: #333;
+}
+	
+
+.fab.fa-facebook:hover {
+    color: #246094;
+}
+
+.fab.fa-instagram:hover {
+    color: #ff008d;
+}
+.fab.fa-twitter-square:hover {
+    color: #00b8ff;
+}
+.article {
+	width: 1000px;
+	margin:auto;
+	text-align: justify;
+	background:#ddd;
+	padding:10px;
+	font-family:Corbel;
+}
+.imagediv{
+	margin:auto;
+}
+.image1{
+	max-width:100%;
+    width: 1000px;
+}
+.end{
+	background:#333;
+	color:#ddd;
+	padding:20px;
+	text-align:center;
+	font-family:arial;
+	font-size:small;
+	word-spacing:5px;
+	letter-spacing:5px;
+}
+
